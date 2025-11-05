@@ -75,31 +75,6 @@ pip install -r requirements.txt
 
 ---
 
-## 🧮 Contoh Prediksi Baru  
-
-Gunakan model dan scaler yang telah disimpan untuk melakukan prediksi pada data baru:
-
-```python
-import pickle
-import numpy as np
-
-# Load model dan scaler
-with open('best_property_price_model.pkl', 'rb') as f:
-    model = pickle.load(f)
-
-with open('scaler.pkl', 'rb') as f:
-    scaler = pickle.load(f)
-
-# Contoh data baru (urutan fitur sesuai dataset)
-data_baru = np.array([[120, 3, 2, 1]])  # contoh: luas, kamar tidur, kamar mandi, lantai
-data_scaled = scaler.transform(data_baru)
-
-# Prediksi harga
-prediksi = model.predict(data_scaled)
-print(f"💰 Prediksi Harga Properti: {prediksi[0]:,.2f}")
-```
-
----
 
 ## 🔭 Rencana Pengembangan  
 
