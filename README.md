@@ -1,20 +1,20 @@
-# 🏡 Polynomial Regression & Regularization Analysis  
+# Polynomial Regression & Regularization Analysis  
 **UTS Machine Learning – Analisis Model Prediksi Harga Properti**
 
 ---
 
-## 📘 Deskripsi  
+## Deskripsi  
 Proyek ini bertujuan untuk menganalisis performa model **Polynomial Regression** dengan variasi derajat (degree 1–5) serta metode regularisasi **Ridge** dan **Lasso** dalam memprediksi harga properti.  
 
 Eksperimen dilakukan menggunakan dataset simulasi `dataset_properti.csv`, dengan tahapan preprocessing berupa *feature scaling* dan *polynomial feature expansion*.  
 
-> 🔹 **Model terbaik diperoleh pada:**  
+>  **Model terbaik diperoleh pada:**  
 > **Polynomial Regression Degree 3 dengan Lasso Regularization (α = 10)**  
 > **R² Test = 0.9729 | RMSE Test = 222.48**
 
 ---
 
-## ⚙️ Instalasi Dependencies  
+##  Instalasi Dependencies  
 
 Pastikan **Python ≥ 3.8** telah terinstal.  
 Kemudian jalankan perintah berikut di terminal untuk menginstal semua library yang dibutuhkan:
@@ -25,7 +25,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Cara Menjalankan Proyek  
+##  Cara Menjalankan Proyek  
 
 1. **Clone atau salin** folder project ini ke komputer Anda.  
 2. Buka terminal atau command prompt, lalu jalankan:
@@ -54,7 +54,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📊 Hasil Eksperimen  
+## Hasil Eksperimen  
 
 | Model | Train R² | Test R² | Train RMSE | Test RMSE |
 |:--|:--:|:--:|:--:|:--:|
@@ -62,11 +62,11 @@ pip install -r requirements.txt
 | Degree 3 – Lasso (α = 1) | 0.9898 | 0.9699 | 150.43 | 234.48 |
 | Degree 3 – Ridge (α = 1) | 0.9886 | 0.9698 | 158.79 | 234.97 |
 
-📈 **Model terbaik:** Polynomial Regression **Degree 3 – Lasso (α = 10)**
+ **Model terbaik:** Polynomial Regression **Degree 3 – Lasso (α = 10)**
 
 ---
 
-## 💡 Insight Utama  
+##  Insight Utama  
 
 - Degree terlalu rendah → **underfitting**  
 - Degree terlalu tinggi → **overfitting**  
@@ -76,9 +76,9 @@ pip install -r requirements.txt
 ---
 
 
-## 🔭 Rencana Pengembangan  
+## Rencana Pengembangan  
 
-- [ ] Menambahkan **k-fold cross-validation** untuk evaluasi yang lebih akurat.  
-- [ ] Mengoptimalkan nilai **alpha** menggunakan **GridSearchCV**.  
-- [ ] Menerapkan **ElasticNet Regression** untuk menggabungkan kelebihan Ridge & Lasso.  
-- [ ] Menguji model menggunakan **data properti nyata** untuk validasi eksternal.  
+-  Menambahkan **k-fold cross-validation** untuk evaluasi yang lebih akurat.  
+-  Mengoptimalkan nilai **alpha** menggunakan **GridSearchCV**.  
+-  Menerapkan **ElasticNet Regression** untuk menggabungkan kelebihan Ridge & Lasso.  
+-  Menguji model menggunakan **data properti nyata** untuk validasi eksternal.  
